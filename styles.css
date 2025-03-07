@@ -1,0 +1,152 @@
+/* Top banner with background image */
+.top-banner-new {
+    background-image: url(../preserchwebsite/Assets/banner.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative; /* Ensures the navbar is positioned on top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.nav-link.active {
+    font-weight: bold; /* Bold the text of the active link */
+    border-bottom: 2px solid #005cff; /* Blue underline for active tab */
+}
+/* Navbar on top of the banner image */
+.navbar-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensures the navbar is above the banner */
+    padding: 20px 0;
+    box-shadow: none; 
+}
+
+.top-banner-new .banner-content h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;  
+    font-weight: bold;  
+    color: white; 
+}
+
+
+
+/* Search Bar and Button Styles */
+.banner-search {
+    max-width: 400px; /* Max width for larger screens */
+}
+/* Styling for the tag list */
+.taglist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .taglist-item {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+
+  .card-img-top {
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the container area while maintaining aspect ratio */
+    width: 100%;
+  }
+
+
+  .contact-card {
+    background: linear-gradient(45deg, #000250 0%, #005cff 100%);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-form-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+.navbar-collapse.show {
+    background-color: white;
+    transform: translateX(0); /* Slide in from the left */
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-collapse {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;  
+    font-weight: bold;  
+    color: #000; /* Ensure the links are visible on a white background */
+}
+
+.navbar-custom {
+    background-color: transparent; /* Keep navbar transparent when it is not open */
+}
+
+.navbar-collapse.show {
+    background-color: white;
+}
+
+    .top-banner-new .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-banner-new .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-search {
+        width: 80%;
+        max-width: 300px; /* More responsive on smaller screens */
+    }
+
+    .top-banner-new .para {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .taglist {
+        flex-direction: row;
+        align-items: center;
+      }
+    
+      .taglist-item {
+        font-size: 1rem;
+        margin-bottom: 10px; /* Adds more space between tags on mobile */
+      }
+      #articleid{
+        margin-top: 10px;
+      }
+}
